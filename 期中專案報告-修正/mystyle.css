@@ -1,0 +1,288 @@
+body{
+    line-height:1.5;
+    background-color:black;
+}
+html{scroll-behavior:smooth;}  /* 滑動效果 */
+* {margin:0px;box-sizing:border-box;}
+#header{
+    position:fixed;
+    height:50px;
+    background-color:#F5F5F5;
+    z-index:999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50px;
+    top:35px;
+    width:800px;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+#header img{
+    height:25px;
+    margin-left:30px;
+    margin-right:30px;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+li{
+    display:inline;
+    margin-right:30px;
+}
+#icon{
+    display:none;
+}
+#page1{
+    background-image:url("page1.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+#page1-word{
+    position:absolute;
+    text-align:center;
+    top:20%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+}
+#page1-word1{
+    position:absolute;
+    text-align:center;
+    top:90%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:#FFBF00;
+    padding:10px;
+    border-radius:50px;
+}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{
+    text-decoration:underline;
+    background-color:#FFBF00;
+    padding:10px;
+    border-radius:50px;
+}
+a:active{
+    text-decoration:underline;
+    background-color:#FFBF00;
+    padding:10px;
+    border-radius:50px;
+}
+#page2{
+    display:flex;
+    height:100vh;
+    position:relative; 
+    top:30px;
+}
+#page2-L{
+    float:left;
+    width:50%;
+    height:100%;
+    position:relative; 
+    left:100px;
+    top:20px;
+    background-image:url('page2.jpg');
+    background-size:90%;
+    background-repeat:no-repeat;
+    animation-name:iPhone16Pro;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+}
+@keyframes iPhone16Pro{
+    0%{background-image:url('page2.jpg');background-size: 90%;background-repeat:no-repeat;}
+    20%{background-image:url('page2.jpg');background-size: 90%;background-repeat:no-repeat;}
+    40%{background-image:url('黑色鈦金屬.jpg');background-size: 90%;background-repeat:no-repeat;}
+    60%{background-image:url('白色鈦金屬.jpg');background-size: 90%;background-repeat:no-repeat;}
+    80%{background-image:url('原色鈦金屬.jpg');background-size:90%;background-repeat:no-repeat;}
+    100%{background-image:url('沙漠色鈦金屬.jpg');background-size: 90%;background-repeat:no-repeat;}
+}
+#page2-R{
+    float:right;
+    width:50%;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:10em;
+    color:white;
+    position:relative; 
+    top:65px;
+}
+#page2-R p{
+    max-width:75%;
+}
+#page3{
+    margin-top:65px;
+    height:100vh;
+    padding-top:30px;
+    align-items:center;
+    text-align:center;
+}
+#page3-L{
+    float:left;
+    width:50%;
+    height:200px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:10em;
+    margin-top:50px;
+    color:white;
+}
+#page3-R{
+    float:right;
+    width:50%;
+    height:200px;
+    text-align:center;
+    justify-content:center;
+}
+#page3-R img{
+    width:100%;
+    text-align:center;
+}
+#page4{
+    background-image:url("page4.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+#page5{
+    height:50vh;
+    color:white;
+    text-align:center;
+    position:relative; 
+    top:50px;
+}
+#table{
+    width:80%;
+    margin:auto;
+    text-align:center;
+}
+#table td{
+    width:300px;
+    text-align:center;
+    border-top:1px solid #ddd;
+}
+#table td,#table th{
+    text-align:center;
+    padding:20px;
+}
+#page6{
+    height:55vh;
+    color:white;
+    text-align:center;
+    scroll-margin-top:80px;
+}
+.table1{
+    width:75%;
+    margin:auto;
+}
+.table1 td{
+    width:300px;
+    text-align:left;
+}
+.table1 td , #table1 th{
+    padding:20px;
+}
+.table2{
+    width:80%;
+    margin:auto;
+    text-align:center;
+}
+.table2 td{
+    width:300px;
+    text-align:center;
+}
+.table2 td , #table2 th{
+    text-align:center;
+    padding:20px;
+}
+#page7{
+    height:55vh;
+    color:white;
+    text-align:center;
+    scroll-margin-top:100px;
+}
+#page8{
+    height:45vh;
+    color:white;
+    text-align:center;
+}
+#footer{
+    height:15vh;
+    text-align:center;
+    background-color:#D3D3D3;
+}
+#table3{
+    margin:auto;
+}
+#table3 img{
+    height:50px;
+}
+#footer a:hover , #footer a:active{
+    text-decoration:underline;
+    background-color:transparent; /* 移除背景色 */
+    padding:0; /* 移除額外填充 */
+}
+@media screen and (max-width: 900px){
+    #page1{
+        background-image:url("黑色鈦金屬1.jpg");
+    }
+    #page2{
+        clear:both;
+        flex-direction:column;
+        height:auto;
+        justify-content:center;
+    }
+    #page2-L , #page2-R{
+        width:100vw;
+        height:80vh;
+    }
+    #page2-L{
+        background-size:cover;
+        background-position:center;
+        width:auto;
+        left:0
+    }
+    #page2-R{
+        padding:20px;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    #page3{
+        width:100%;
+        flex-direction:column; /* 垂直堆疊 */
+        align-items:center;
+        text-align:center;
+        height:auto; /* 自動調整高度 */
+        margin-top:20px;
+    }
+    #page3-L , #page3-R{
+        width:100%; /* 占滿螢幕寬度 */
+        height:auto;
+        padding:20px;
+    }
+    #page3 img{
+        width:80%; /* 調整圖片大小 */
+        margin:auto;
+        display:block;
+    }
+    #page4{
+        background-image:none;
+    }
+    #page5 , #page6 , #page7 , #page8{
+        height:auto;
+    }
+    ul li{display:none;}
+}
