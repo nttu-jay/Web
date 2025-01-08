@@ -1,0 +1,46 @@
+#play_h1{  /*標題樣式*/
+    color:white;
+    font-size:60px;
+    position:absolute; 
+    top:10%;
+    left:50%; 
+    transform:translate(-50%,-50%);
+}
+p{  /*p標籤樣式*/
+    font-family:"Times New Roman";
+    text-align:center;
+    border:0; 
+    padding: 0;
+}
+#Box{  /*整個5*5的div*/
+    position:absolute; 
+    left:14%; 
+    top:150px;
+}
+.mainBox{  /*橫的排列,並對齊*/
+    margin:auto;
+    width:50%; 
+    height:50%; 
+    padding:0; 
+    text-align:center;
+    display:flex; 
+    flex-direction:row; 
+    justify-content:space-between;
+}
+.mainBox > div{
+    flex:auto;
+    width:10vw; 
+    height:10vh;
+    padding:0; 
+    margin:1vw;
+    background-color:white;
+}
+.innerButton{
+    height:100px; 
+    width:100px;
+    font-size:2em; 
+    background-color:rgb(255, 210, 143);
+}
+.innerGraphic{
+    font-size:2em;
+}
