@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style> \\初始圖片為空白
+#animate { width: 75px; height: 75px; position: absolute; background-image: url("../image/打地鼠小遊戲/白.png"); background-size: cover;cursor: grab;}
+</style>
+<body>
+<p id="counter">0</p>  <!-- 左上放一個記分板 -->
+<div id="animate"></div>  <!-- 地鼠或炸彈 -->
+<script>
+let now = ""  //現在是地鼠還是炸彈
+const x = document.querySelector("div");
+let number = 0;  <!-- 記分 -->
+let id = setInterval(display,3000);  //每3秒執行一次display()
+function display(){
+let Ran = Math.random()  //取亂碼
+if(Ran > 0.3){  //大於0.3為地鼠
+    now = "地鼠"
+    document.getElementById("animate").style.backgroundImage="url('../image/打地鼠小遊戲/地鼠.png')";  //更換div的圖
+}
+else{  //小於等於0.3為炸彈
+    now = "炸彈"
+    document.getElementById("animate").style.backgroundImage="url('../image/打地鼠小遊戲/炸彈.png')";  //更換div的圖
+}
+let elem = document.getElementById("animate");  //賦予div,x軸和y軸
+let x = Math.floor((Math.random() * 600) + 1);
+let y = Math.floor((Math.random() * 600) + 1);
+elem.style.left = x + "px";
+elem.style.top = y + "px";
+elem.style.display = "block";
+}
+x.addEventListener("click", function(){  //監聽點擊事件
+if(now == "地鼠"){  //是地鼠+1
+    number=number+1
+}
+else{  //不是地鼠(炸彈)-1
+    number=number-1
+}
+document.getElementById("counter").innerHTML = number;  //更換記分板
+x.style.display = "none";
+if (number >= 6){  //分數達到6分跳出alert，並轉換頁面到首頁
+    alert("恭喜完成");
+    clearInterval(id);
+    window.location.href = "../網頁設計與開發期末專案報告-11204134-王宥佳.html";
+}
+});
+</script>
+</body></html>

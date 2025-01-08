@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>  <!-- 額外資訊 -->
+        <meta charset = "UTF-8">  <!-- 顯示中文內容 -->
+        <title>「宥佳」命相館</title>  <!-- 網頁標籤 -->
+        <meta name = "author" content = "王宥佳">  <!-- 網頁作者 -->
+        <meta name = "description" content = "網頁設計與開發期末專案報告-「宥佳」命相館">  <!-- 網頁敘述 -->
+        <meta name = "keywords" content = "期末專案報告 , 「宥佳」命相館 , 王宥佳 , 翻牌小遊戲 , HTML , CSS , JavaScript">  <!-- 網頁關鍵字 -->
+        <link rel = "icon" type = "image/x-icon" href = "../image/Icon/星座.ico">  <!-- 更改網頁標籤圖示 -->
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1" >  <!-- 網頁以可視寬度縮放比例調整 -->
+        <link rel="stylesheet" href="../css/Body-Style.css">  <!-- 外部CSS引用 --><!-- 主體的css，可以不用重複打一樣的語法 -->
+        <link rel="stylesheet" href="../css/翻牌小遊戲-Style.css">  <!-- 外部CSS引用 --><!-- 額外再開一個，以免太亂 -->
+        <script src="../js/Function.js" defer></script>  <!-- 引用外部 JavaScript 檔案 --><!-- 下拉式選單 -->
+        <script src="../js/翻牌小遊戲_Function.js" defer></script>  <!-- 引用外部 JavaScript 檔案 --><!-- 點選事件 -->
+    </head>
+    <body>  <!-- 可視內容 -->
+        <div id="BG"></div>  <!-- 背景圖的div -->
+        <div class="dropdown">  <!-- 下拉式選單 -->
+            <button onclick="Contents()" class="dropbtn">Contents</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href = "../網頁設計與開發期末專案報告-11204134-王宥佳.html">首頁</a>
+                <a href="../html/12星座卡牌.html">12星座卡牌</a>
+                <a href="../html/12星座介紹.html">12星座介紹</a>
+                <a href="../html/四象星座介紹.html">四象星座介紹</a>
+                <a href="../html/生命靈數介紹.html">生命靈數介紹</a>
+                <a href="../html/上升星座介紹.html">上升星座介紹</a>
+                <a href="../html/下降星座介紹.html">下降星座介紹</a>
+                <a href="../html/打地鼠小遊戲.html">打地鼠小遊戲</a>
+                <a href="../html/翻牌小遊戲.html">翻牌小遊戲</a>
+                <a href="../html/BMI計算.html">BMI計算</a>
+                <a href = "../html/作者介紹.html" target = "_blank" title="應數二-11204134-王宥佳">作者介紹</a>
+            </div>
+        </div>
+        <h1 id = "play_h1">翻牌小遊戲</h1>  <!-- 標題 -->
+        <div id = "Box">  <!-- 放元素的div -->
+            <div class="mainBox">
+                <div id="box0">
+                    <button onclick="clickButton(0, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box1">
+                    <button onclick="clickButton(1, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box2">
+                    <button onclick="clickButton(2, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box3">
+                    <button onclick="clickButton(3, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box4">
+                    <button onclick="clickButton(4, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+            </div>
+            <div class="mainBox">  <!-- 放元素的div -->
+                <div id="box5">
+                    <button onclick="clickButton(5, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box6">
+                    <button onclick="clickButton(6, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box7">
+                    <button onclick="clickButton(7, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box8">
+                    <button onclick="clickButton(8, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box9">
+                    <button onclick="clickButton(9, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+            </div>
+            <div class="mainBox">  <!-- 放元素的div -->
+                <div id="box10">
+                    <button onclick="clickButton(10, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box11">
+                    <button onclick="clickButton(11, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box12">
+                    <button onclick="clickButton(12, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box13">
+                    <button onclick="clickButton(13, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box14">
+                    <button onclick="clickButton(14, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+            </div>
+            <div class="mainBox">  <!-- 放元素的div -->
+                <div id="box15">
+                    <button onclick="clickButton(15, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box16">
+                    <button onclick="clickButton(16, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box17">
+                    <button onclick="clickButton(17, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box18">
+                    <button onclick="clickButton(18, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box19">
+                    <button onclick="clickButton(19, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+            </div>
+            <div class="mainBox">  <!-- 放元素的div -->
+                <div id="box20">
+                    <button onclick="clickButton(20, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box21">
+                    <button onclick="clickButton(21, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box22">
+                    <button onclick="clickButton(22, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box23">
+                    <button onclick="clickButton(23, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+                <div id="box24">
+                    <button onclick="clickButton(24, event)" class="innerButton"><p>翻牌</p></button>
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <h3>Copyright &copy; 2025 作者:<b><i></i>王宥佳</i></b>&#128512;</h3>
+            <h5>詳細作者介紹請到右方連結⮕<a href = "作者介紹.html" target = "_blank" title="應數二-11204134-王宥佳">作者介紹</a></h5>
+            <table id = "table1">
+                <tr>
+                    <td><a href = "mailto:jaywang0606@gmail.com" target = "_blank" title="王宥佳-Email"><img src = "../image/Email.png"></a></td>
+                    <td><a href = "https://www.facebook.com/profile.php?id=100004863918050&mibextid=LQQJ4d" target = "_blank" title="王宥佳-Facebook"><img src = "../image/Facebook.png"></a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

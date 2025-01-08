@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>  <!-- 額外資訊 -->
+        <meta charset = "UTF-8">  <!-- 顯示中文內容 -->
+        <title>「宥佳」命相館</title>  <!-- 網頁標籤 -->
+        <meta name = "author" content = "王宥佳">  <!-- 網頁作者 -->
+        <meta name = "description" content = "網頁設計與開發期末專案報告-「宥佳」命相館">  <!-- 網頁敘述 -->
+        <meta name = "keywords" content = "期末專案報告 , 「宥佳」命相館 , 王宥佳 , BMI計算 , HTML , CSS , JavaScript">  <!-- 網頁關鍵字 -->
+        <link rel = "icon" type = "image/x-icon" href = "../image/Icon/星座.ico">  <!-- 更改網頁標籤圖示 -->
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1" >  <!-- 網頁以可視寬度縮放比例調整 -->
+        <link rel="stylesheet" href="../css/Body-Style.css">  <!-- 外部CSS引用 --><!-- 主體的css，可以不用重複打一樣的語法 -->
+        <link rel="stylesheet" href="../css/介紹-Style.css">  <!-- 外部CSS引用 --><!-- 介紹的css，可以不用重複打一樣的語法 -->
+        <script src="../js/Function.js" defer></script>  <!-- 引用外部 JavaScript 檔案 --><!-- 包含兩個js，1.下拉式選單2.計算BMI -->
+    </head>
+    <body>  <!-- 可視內容 -->
+        <div id="BG"></div>  <!-- 背景圖的div -->
+        <div class="dropdown">  <!-- 下拉式選單 -->
+            <button onclick="Contents()" class="dropbtn">Contents</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href = "../網頁設計與開發期末專案報告-11204134-王宥佳.html">首頁</a>
+                <a href="../html/12星座卡牌.html">12星座卡牌</a>
+                <a href="../html/12星座介紹.html">12星座介紹</a>
+                <a href="../html/四象星座介紹.html">四象星座介紹</a>
+                <a href="../html/生命靈數介紹.html">生命靈數介紹</a>
+                <a href="../html/上升星座介紹.html">上升星座介紹</a>
+                <a href="../html/下降星座介紹.html">下降星座介紹</a>
+                <a href="../html/打地鼠小遊戲.html">打地鼠小遊戲</a>
+                <a href="../html/翻牌小遊戲.html">翻牌小遊戲</a>
+                <a href="../html/BMI計算.html">BMI計算</a>
+                <a href = "../html/作者介紹.html" target = "_blank" title="應數二-11204134-王宥佳">作者介紹</a>
+            </div>
+        </div>
+        <h1 id="T1">BMI計算</h1>  <!-- 標題 -->
+        <div id="div1"></div>  <!-- 白色背景 -->
+        <div id="div3">  <!-- 表單 -->
+            <form>
+                請輸入身高 (公尺): <input type="text" id="height">
+            </form>
+            <form>
+                請輸入體重 (公斤): <input type="text" id="weight">
+            </form>
+            <button type="button" onclick="cal()">BMI</button>
+            <h3 id="BMI"></h3>  <!-- BMI的值 -->
+            <p id="Introduce"></p>  <!-- BMI的內容建議 -->
+        </div>
+        <div id = "footer">
+            <h3>Copyright &copy; 2025 作者:<b><i></i>王宥佳</i></b>&#128512;</h3>
+            <h5>詳細作者介紹請到右方連結⮕<a href = "作者介紹.html" target = "_blank" title="應數二-11204134-王宥佳">作者介紹</a></h5>
+            <table id = "table1">
+                <tr>
+                    <td><a href = "mailto:jaywang0606@gmail.com" target = "_blank" title="王宥佳-Email"><img src = "../image/Email.png"></a></td>
+                    <td><a href = "https://www.facebook.com/profile.php?id=100004863918050&mibextid=LQQJ4d" target = "_blank" title="王宥佳-Facebook"><img src = "../image/Facebook.png"></a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
